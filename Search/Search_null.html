@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Store</title>
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="Search.css">
+</head>
+<body>
+<div id="body">
+    <div id="back"></div>
+
+    <form id="login">
+        <div>
+            <label>用户名： </label>
+            <input id="cancel_1" class="label" type="text" placeholder="请输入您的用户名">
+            <p class="error error_1">请输入用户名</p>
+        </div>
+
+        <div>
+            <label>密码： </label>
+            <input id="cancel_2" class="label" type="password" placeholder="请输入您的密码">
+            <p class="error error_2">请输入密码</p>
+        </div>
+
+        <div>
+            <label id="check">验证码：</label>
+            <input id="cancel_3" class="label" type="text" maxlength="4" placeholder="请输入验证码">
+            <p class="error error_3">请输入验证码</p>
+        </div>
+
+        <div class="button">
+            <button type="button" class="cancel">取消</button>
+            <button type="button" id="login_in">登陆</button>
+        </div>
+    </form>
+
+    <form id="login_out">
+        <div>
+            <label>昵称： </label>
+            <input id="cancel_4" class="label" minlength="6" maxlength="9" type="text" placeholder="6~9位,不能为纯数字或字母">
+            <p class="error error_4">请输入昵称，6~9位，不能为纯数字或字母，应如huxiao2</p>
+            <p class="error error_9">6~9位，不能为纯数字或字母，应如huxiao2</p>
+        </div>
+
+        <div>
+            <label>密码： </label>
+            <input id="cancel_5" class="label" type="password" minlength="6" maxlength="16" placeholder="6~16位，不能与昵称相同">
+            <p class="error error_5">请输入密码,6~16位,不能与昵称相同</p>
+            <p class="error error_10">6~16位，以字母开头，只能包含字符、数字和下划线，如：hu_xiao222</p>
+        </div>
+
+        <div>
+            <label>确认密码：</label>
+            <input id="cancel_6" class="label" type="password" placeholder="确认密码">
+            <p class="error error_6">请再次输入密码</p>
+            <p class="error error_7">密码不一致</p>
+        </div>
+
+        <div>
+            <label>邮箱：</label>
+            <input id="cancel_7" class="label" type="email" placeholder="邮箱,正确格式：xxxx@example.com">
+            <p class="error error_8">请输入邮箱</p>
+            <p class="error error_12">请输入邮箱的正确格式：xxxx@example.com</p>
+        </div>
+
+        <div class="button">
+            <button type="button" class="cancel_0">取消</button>
+            <button type="button" id="register">注册</button>
+        </div>
+    </form>
+    <header>
+        <div class="header">
+            <span class="fa fa-user-circle" id="h1"><a class="href_2">未登录</a></span>
+            <span class="fa fa-group" id="h4"><a class="href_2">注册</a></span>
+
+            <div>
+                <span class="fa fa-user-circle h2 hide" id="person"><a href="../Person/Person.html"
+                                                                       class="href_2">Song</a></span>
+                <span class="fa fa-shopping-cart h2 hide"><a href="../Shopping_cart/Shopping_cart.html" class="href_2"
+                                                             id="h2">购物车</a></span>
+                <span class="fa fa-sign-out h2 hide"><a class="href_2" id="h3">登出</a></span>
+            </div>
+        </div>
+    </header>
+    <br>
+
+    <div id="title">
+        <h1>Art Store</h1>
+        <div>
+            <label>
+                <input type="text" name="搜索" id="search1">
+                <input type="button" value="搜索" id="search2">
+            </label>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <a href="../HomePage/HomePage.html" class="href_3">首页</a>
+            <a href="Search.html" class="href_4">搜索</a>
+            <a href="../Description/Description.html" class="href_3">详情</a>
+            <a href="" class="href_3">发布艺术品</a>
+        </div>
+    </nav>
+
+    <div id="trace">您的足迹： <a href="../HomePage/HomePage.html"> 主页</a> -> <a href="../HomePage/HomePage.html"> 主页</a> ->
+        <a href="../Person/Person.html"> 个人页面</a> -> <span>搜索界面</span></div>
+
+    <div id="content">
+        <h3>搜索结果：</h3>
+    </div>
+
+    <div>
+        <p id="h0">搜索结果为空</p>
+    </div>
+</div>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script type="text/javascript" src="Search.js"></script>
+</body>
+</html>

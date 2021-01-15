@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Store</title>
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+</head>
+
+<body>
+<div id="body">
+    <div id="back"></div>
+
+    <form id="login">
+        <div>
+            <label>用户名： </label>
+            <input id="cancel_1" class="label" type="text" placeholder="请输入您的用户名">
+            <p class="error error_1">请输入用户名</p>
+        </div>
+
+        <div>
+            <label>密码： </label>
+            <input id="cancel_2" class="label" type="password" placeholder="请输入您的密码">
+            <p class="error error_2">请输入密码</p>
+        </div>
+
+        <div>
+            <label id="check">验证码：</label>
+            <input id="cancel_3" class="label" type="text" maxlength="4" placeholder="请输入验证码">
+            <p class="error error_3">请输入验证码</p>
+        </div>
+
+        <div class="button">
+            <button type="button" class="cancel">取消</button>
+            <button type="button" id="login_in">登陆</button>
+        </div>
+    </form>
+
+    <form id="login_out">
+        <div>
+            <label>昵称： </label>
+            <input id="cancel_4" class="label" minlength="6" maxlength="9" type="text" placeholder="6~9位,不能为纯数字或字母">
+            <p class="error error_4">请输入昵称，6~9位，不能为纯数字或字母，应如huxiao2</p>
+            <p class="error error_9">6~9位，不能为纯数字或字母，应如huxiao2</p>
+        </div>
+
+        <div>
+            <label>密码： </label>
+            <input id="cancel_5" class="label" type="password" minlength="6" maxlength="16" placeholder="6~16位，不能与昵称相同">
+            <p class="error error_5">请输入密码,6~16位,不能与昵称相同</p>
+            <p class="error error_10">6~16位，以字母开头，只能包含字符、数字和下划线，如：hu_xiao222</p>
+        </div>
+
+        <div>
+            <label>确认密码：</label>
+            <input id="cancel_6" class="label" type="password" placeholder="确认密码">
+            <p class="error error_6">请再次输入密码</p>
+            <p class="error error_7">密码不一致</p>
+        </div>
+
+        <div>
+            <label>邮箱：</label>
+            <input id="cancel_7" class="label" type="email" placeholder="邮箱,正确格式：xxxx@example.com">
+            <p class="error error_8">请输入邮箱</p>
+            <p class="error error_12">请输入邮箱的正确格式：xxxx@example.com</p>
+        </div>
+
+        <div class="button">
+            <button type="button" class="cancel_0">取消</button>
+            <button type="button" id="register">注册</button>
+        </div>
+    </form>
+    <div>
+        <div id="container">
+            <div id="list" style="left: -1003px">
+                <img src="../images/works/medium/012050.jpg" alt="1">
+                <img src="../images/works/medium/012020.jpg" alt="1">
+                <img src="../images/works/medium/010060.jpg" alt="2">
+                <img src="../images/works/medium/015130.jpg" alt="3">
+                <img src="../images/works/medium/017060.jpg" alt="4">
+                <img src="../images/works/medium/012050.jpg" alt="5">
+                <img src="../images/works/medium/012020.jpg" alt="5">
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2" class=""></span>
+                <span index="3" class=""></span>
+                <span index="4" class=""></span>
+                <span index="5" class=""></span>
+            </div>
+            <a href="javascript:" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:" id="next" class="arrow">&gt;</a>
+        </div>
+    </div>
+    <div>
+        <div id="header">
+            <h1 class="nav0">Art Store</h1>
+            <div class="nav0">Where you find
+                <span>GENIUS</span>
+                and
+                <span>EXTROORDINARYA</span>
+            </div>
+            <div class="nav">
+                <nav class="nav0">
+                    <a href="HomePage.html" class="li">首页</a>
+                    <a href="../Search/Search_null.html" class="li">搜索</a>
+                    <a href="../Description/Description.html" class="li">详情</a>
+                    <a id="a" class="li">登陆</a>
+                    <a href="../Person/Person.html" id="person" class="li hide">Song</a>
+                    <a id="b" class="li">注册</a>
+                    <a id="c" class="li hide">登出</a>
+                </nav>
+            </div>
+            <div class="hidden">
+                <h2>raphael</h2>
+                <p>Is a pioneer of Post Impressionism,and deeply influenced the art of the twenty Centuyr</p>
+                <div id="learn">
+                    <a href="../Description/Description.html">Learn More</a></div>
+            </div>
+        </div>
+
+        <article>
+            <section id="first">
+                <img src="../images/artists/square-thumb/5.jpg" alt="哎呀，图片走丢了~~">
+                <p class="title">Prtrait of Elenor Toloks</p>
+                <p class="details">Her book is organized into sections by epochs and ruling governments;at times,
+                    the compression of such a long history into this short space makes it hard to
+                    digest, but Lancaster stops often to recount captivating legends and anecdotes.
+                    She seems to have a quote from every writer or thinker who ever visited Naples
+                    or its surrounding.</p>
+            </section>
+            <section id="second">
+                <img src="../images/artists/square-thumb/15.jpg" alt="哎呀，图片走丢了~~">
+                <p class="title">Portrait of Elenor Toloks</p>
+                <p class="details">As she stresses, for most of its history, Naples was a preeminent European city,
+                    a thriving home for music, philosophy, painting and science. Her book is organized
+                    into sections by epochs and ruling governments; at times, the compression of such
+                    a long history into this short space makes it hard to digest, but Lancaster stops
+                    often to recount captivating legends and anecdotes.</p>
+            </section>
+            <section id="third">
+                <img src="../images/artists/square-thumb/6.jpg" alt="哎呀，图片走丢了~~">
+                <p class="title">Portrait of Elenor Toloks</p>
+                <p class="details">With this engaging history, Lancaster, a professor of Italian, weeks to restore honor
+                    to Naples,which many Italians and prospective visitors see as a city of little more
+                    than pickpockets and pizza. As she stresses, for most of its history, Naples was a preeminent
+                    European
+                    city,
+                    a thriving home for music, philosophy, painting and science.</p>
+            </section>
+            <div class="dets">
+                <span><a href="../Description/Description.html" class="det det1">View Details</a></span>
+                <span><a href="../Description/Description.html" class="det det2">View Details</a></span>
+                <span><a href="../Description/Description.html" class="det det3">View Details</a></span>
+            </div>
+        </article>
+    </div>
+    <footer>
+        Produced and maintained by Song at 2018.4.10
+    </footer>
+
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script type="text/javascript" src="HomePage.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Art Store</title>
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="Shopping_cart.css">
+</head>
+
+<body>
+
+<div id="body">
+    <header>
+        <div class="header">
+            <span class="fa fa-user-circle h2" id="person"><a href="../Person/Person.html"
+                                                              class="href_2">Song</a></span>
+            <span class="fa fa-shopping-cart h2"><a href="Shopping_cart.html" class="href_2" id="h2">购物车</a></span>
+            <span class="fa fa-sign-out h2"><a class="href_2" id="h3">登出</a></span>
+        </div>
+    </header>
+    <br>
+
+    <div id="title">
+        <h1>Art Store</h1>
+        <div>
+            <input type="text" name="搜索" id="search1">
+            <input type="button" id="search2" value="搜索">
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <a href="../HomePage/HomePage.html" class="href_3">首页</a>
+            <a href="../Search/Search.html" class="href_3">搜索</a>
+            <a href="../Description/Description.html" class="href_3">详情</a>
+            <a href="#" class="href_4">发布艺术品</a>
+        </div>
+    </nav>
+
+    <div id="trace">您的足迹： <a href="../HomePage/HomePage.html"> 主页</a> -> <a href="../HomePage/HomePage.html"> 主页</a> ->
+        <a href="../Person/Person.html"> 个人页面</a> -> <a href="../HomePage/HomePage.html"> 主页</a> -> <span>购物车页面</span>
+    </div>
+
+    <div class="shopping_cart">购物车</div>
+
+    <article>
+        <table>
+            <tr id="goods_1">
+                <td><img src="../images/genres/square-medium/1.jpg" class="goods des">
+                </td>
+                <td>
+                    <div class="des"> Still Life with Bowl and Fruit</div>
+                    <p class="des">Pallo Picasso</p>
+                    <p class="des">It is amazing!</p>
+                    <button class="button_1"><img src="../images/gui/heart.png">价格：$120.00</button>
+                    <button class="button_2" id="btn_1"><img src="../images/gui/cart_add.png">删除</button>
+                </td>
+            </tr>
+
+            <tr id="goods_2">
+                <td><img src="../images/works/square-medium/001080.jpg" class="goods des"></td>
+                <td>
+                    <div class="des">Family of Salitimbanques</div>
+                    <p class="des">Pallo Picasso</p>
+                    <p class="des">It is amazing!</p>
+                    <button class="button_1"><img src="../images/gui/heart.png">价格：$170.00</button>
+                    <button class="button_2" id="btn_2"><img src="../images/gui/cart_add.png">删除</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div>
+            <button id="btn_3"><img src="../images/gui/shopping_basket.png">结款</button>
+        </div>
+    </article>
+
+    <div class="shopping_cart">我删除的商品</div>
+
+    <article>
+        <table>
+            <tr id="goods_01">
+                <td><img src="../images/genres/square-medium/1.jpg" class="goods des"></td>
+                <td>
+                    <div class="des">Still Life with Bowl and Fruit</div>
+                    <p class="des">Pallo Picasso</p>
+                    <p class="des">It is amazing!</p>
+                    <button class="button_1"><img src="../images/gui/heart.png">价格：$120.00</button>
+                    <button class="button_2" id="btn_01"><img src="../images/gui/cart_add.png">恢复</button>
+                </td>
+            </tr>
+
+            <tr id="goods_02">
+                <td><img src="../images/works/square-medium/001080.jpg" class="goods dec"></td>
+                <td>
+                    <div class="des">Family of Salitimbanques</div>
+                    <p class="des">Pallo Picasso</p>
+                    <p class="des">It is amazing!</p>
+                    <button class="button_1"><img src="../images/gui/heart.png">价格：$170.00</button>
+                    <button class="button_2" id="btn_02"><img src="../images/gui/cart_add.png">恢复</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+    </article>
+</div>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script type="text/javascript" src="Shopping_cart.js"></script>
+</body>
+</html>

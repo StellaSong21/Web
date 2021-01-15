@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Store</title>
+    <link rel="stylesheet" type="text/css" href="../reset.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="Person.css">
+</head>
+<body>
+<div id="back"></div>
+<div class="top">
+    <label>您要充值
+        <input type="text" id="number" pattern="/^[1-9]\d*$/">
+        元人民币
+    </label>
+    <br>
+    <button type="button" id="sure">确定</button>
+    <button type="button" id="cancel">取消</button>
+</div>
+
+<div id="body">
+    <div id="pay">
+
+    </div>
+    <header>
+        <div class="header">
+            <span class="fa fa-user-circle h2" id="person"><a href="Person.html" class="href_2">Song</a></span>
+            <span class="fa fa-shopping-cart h2"><a href="../Shopping_cart/Shopping_cart.html" class="href_2" id="h2">购物车</a></span>
+            <span class="fa fa-sign-out h2"><a class="href_2" id="h3">登出</a></span>
+        </div>
+    </header>
+    <br>
+
+    <div id="title">
+        <h1>Art Store</h1>
+        <div>
+            <label>
+                <input type="text" name="搜索" id="search1">
+                <input type="button" id="search2" value="搜索">
+            </label>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <a href="../HomePage/HomePage.html" class="href_3">首页</a>
+            <a href="../Search/Search.html" class="href_4">搜索</a>
+            <a href="../Description/Description.html" class="href_3">详情</a>
+            <a href="#" class="href_3">发布艺术品</a>
+        </div>
+    </nav>
+
+    <div id="trace">您的足迹： <a href="../HomePage/HomePage.html"> 主页</a> -> <a href="../HomePage/HomePage.html"> 主页</a> ->
+        <span>个人页面</span></div>
+
+    <div id="artical_1">
+        <p>用户：Song</p>
+        <p>电话：</p>
+        <p>邮箱：</p>
+        <p>地址：</p>
+        <p>余额：$<span id="yue">88888888</span></p>
+        <br>
+        <button type="button" id="top">充值</button>
+    </div>
+
+    <div id="artical_2">
+        <div id="section_1">
+            <p>我上传过的艺术品：</p>
+        </div>
+
+        <div id="section_2">
+            <p>我购买的艺术品：</p>
+            <table>
+                <tr>
+                    <td>订单编号：201804132200</td>
+                    <td>商品名称：</td>
+                    <td>订单时间：2018.4.13</td>
+                    <td>订单金额：$170.00</td>
+                </tr>
+                <tr>
+                    <td>订单编号：102804132201</td>
+                    <td>商品名称：</td>
+                    <td>订单时间：2018.4.13</td>
+                    <td>订单金额：$120.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="section_3">
+            <p>我卖出的艺术品：</p>
+        </div>
+    </div>
+</div>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script type="text/javascript" src="Person.js"></script>
+</body>
+</html>
